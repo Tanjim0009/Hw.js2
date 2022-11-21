@@ -1,50 +1,32 @@
-//HW-> Grade Calculation based on user input
 
-//Optional HW -> Find odd & Even number
+var a;//Global variable
+var b;
+var c;
+var result=0; //Global variable
+var avg=0; //Global variable
+ 
+function Calculate()
+{
+a=parseInt(form1.txtNum1.value);
+b=parseInt(form1.txtNum2.value);
+c=parseInt(form1.txtNum3.value);
+result=a+b+c;
+avg = result/3;
+ 
+document.write("The Total is  :"+ "<b>" + result  +  "<b>" + "</br>");
+ 
+document.write("The Avg is  :"+ "<b>" + avg  +  "<b>" + "</br>");
+ 
+if(avg > 50)
+{
+    document.write("The Grade is  :"+ "<b>" + "Pass"  +  "<b>" );
+ 
+}
+else
 
-
-
-let num = 100;
-
-if (num >= 80 && num <= 100) {
-   document.write('A+')
-} else if (num >= 70 && num < 80) {
-   document.write('A')
-} else if (num >= 60 && num < 70) {
-   document.write('A-')
-} else if (num >= 50 && num < 60) {
-   document.write('B')
-} else if (num >= 40 && num < 50) {
-   document.write('C')
-} else if (num >= 33 && num < 40) {
-   document.write('TTP')
-} else if (num >= 0 && num < 33) {
-   document.write('Jibon Sesh (Failed)')
-}else {
-   document.write('Ultapalta Number pawa jabena.')
+{
+    document.write("The Grade is  :"+ "<b>" + "Fail"  +  "<b>" );
+}
 }
 
-
-
-
-
-// function sum(num1, num2) {
-//    document.write(num1 + num2)
-//    document.write('<br>')
-// }
-// sum(10,20);
-// sum(100,200);
-// sum(500,500);
-
-
-function showText() {
-   // var button = document.getElementById('btn')
-   // button.innerText = 'Clicked';
-   // button.style.color = 'red'
-   // button.style.fontSize = '50px'
-
-
-   var test =document.getElementById('input').value
-
-   document.getElementById('result').innerText = test;
-}
+ 
